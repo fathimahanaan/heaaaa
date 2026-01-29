@@ -1,0 +1,17 @@
+@font-face {
+  font-family: MeaCulpa-regular ;
+  src: url("../src/assets/fonts/JimNightshade-Regular.ttf");
+}
+@font-face {
+  font-family:  Lato ;
+  src: url("../src/assets/fonts/MeaCulpa-Regular.ttf");
+}
+@import "tailwindcss";
+ 
+@theme{
+  --font-MeaCulpa-regular: MeaCulpa-regular,"sans-serif"
+}
+
+@theme{
+  --font-Lato: Lato,"sans-serif"
+}
