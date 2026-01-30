@@ -24,11 +24,11 @@ export default function Collections() {
         <h1 className="text-4xl md:text-5xl font-MeaCulpa-regular   text-[#262A12] mb-4">
           The Collections
         </h1>
-      <p className="text-[#556B2F] md:text-lg leading-relaxed tracking-wide  text-opacity-90 max-w-3xl mx-auto text-center">
-  Bridal and Casual Couture, Party wears and gowns, Statement and Rental
-  jewelleries, Kids festive attires, Loungewear, Leisure suits —
-  handpicked and custom made for your special moments.
-</p>
+        <p className="text-[#556B2F] md:text-lg leading-relaxed tracking-wide  text-opacity-90 max-w-3xl mx-auto text-center">
+          Bridal and Casual Couture, Party wears and gowns, Statement and Rental
+          jewelleries, Kids festive attires, Loungewear, Leisure suits —
+          handpicked and custom made for your special moments.
+        </p>
       </div>
 
       {/* Image Carousel */}

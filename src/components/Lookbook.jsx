@@ -1,7 +1,5 @@
 import React from "react";
 
- 
-
 const lookbookItems = [
   {
     type: "image",
@@ -35,8 +33,7 @@ const lookbookItems = [
     type: "video",
     src: "/video.mp4",
     title: "Natural Flow",
-    description:
-      "Captured in motion, emphasizing fluidity and natural rhythm.",
+    description: "Captured in motion, emphasizing fluidity and natural rhythm.",
   },
   {
     type: "image",
@@ -63,53 +60,45 @@ const lookbookItems = [
     type: "image",
     src: "/k.jpeg",
     title: "Everyday Edit",
-    description:
-      "Simple styling that highlights the beauty of everyday wear.",
+    description: "Simple styling that highlights the beauty of everyday wear.",
   },
   {
     type: "video",
     src: "/neenu.mp4",
     title: "Effortless Movement",
-    description:
-      "Gentle motion showcasing ease, flow, and effortless styling.",
+    description: "Gentle motion showcasing ease, flow, and effortless styling.",
   },
-    {
+  {
     type: "image",
     src: "/ay.jpeg",
     title: "Everyday Edit",
-    description:
-      "Simple styling that highlights the beauty of everyday wear.",
+    description: "Simple styling that highlights the beauty of everyday wear.",
   },
-     {
+  {
     type: "image",
     src: "/adu.jpeg",
     title: "Everyday Edit",
-    description:
-      "Simple styling that highlights the beauty of everyday wear.",
+    description: "Simple styling that highlights the beauty of everyday wear.",
   },
-       {
+  {
     type: "image",
     src: "/mm.jpeg",
     title: "Everyday Edit",
-    description:
-      "Simple styling that highlights the beauty of everyday wear.",
+    description: "Simple styling that highlights the beauty of everyday wear.",
   },
-    {
+  {
     type: "image",
     src: "/mi.jpeg",
     title: "Everyday Edit",
-    description:
-      "Simple styling that highlights the beauty of everyday wear.",
+    description: "Simple styling that highlights the beauty of everyday wear.",
   },
-     {
+  {
     type: "image",
     src: "/mu.jpeg",
     title: "Everyday Edit",
-    description:
-      "Simple styling that highlights the beauty of everyday wear.",
+    description: "Simple styling that highlights the beauty of everyday wear.",
   },
 ];
-
 
 export default function ElegantLookbook() {
   return (
@@ -165,5 +154,3 @@ export default function ElegantLookbook() {
     </section>
   );
 }
- 
- 
