@@ -26,23 +26,23 @@ export default function Collections() {
           The Collections
         </h1>
         <div
-  style={{
-    position: "relative",
-    overflow: "hidden",
-    minHeight: "500px",
-    maxHeight: "500px",
-    width: "100%",
-  }}
->
-  <Ballpit
-    count={200}
-    gravity={0.01}
-    friction={0.9975}
-    wallBounce={0.95}
-    followCursor={false}
-    colors={[0xA8E6CF, 0xFFFFFF, 0xFFC0CB]}// <-- pastel green and white
-  />
-</div>
+          style={{
+            position: "relative",
+            overflow: "hidden",
+            minHeight: "500px",
+            maxHeight: "500px",
+            width: "100%",
+          }}
+        >
+          <Ballpit
+            count={200}
+            gravity={0.01}
+            friction={0.9975}
+            wallBounce={0.95}
+            followCursor={false}
+            colors={[0xa8e6cf, 0xffffff, 0xffc0cb]} // <-- pastel green and white
+          />
+        </div>
         <p className="text-[#556B2F] md:text-lg leading-relaxed tracking-wide  text-opacity-90 max-w-3xl mx-auto text-center">
           Bridal and Casual Couture, Party wears and gowns, Statement and Rental
           jewelleries, Kids festive attires, Loungewear, Leisure suits —
@@ -63,9 +63,6 @@ export default function Collections() {
           ))}
         </Slider>
       </div>
-   
- 
- 
     </section>
   );
 }
