@@ -11,13 +11,14 @@ export default function FounderVision() {
           About Our Boutique
         </h1>
         <p className="text-[#3A3F1F]/80 md:text-lg leading-relaxed tracking-wide">
-          Discover the story behind <strong>Hea By Pink Bubbles</strong>, the vision of our founder Shefeeja Nizar, 
-          and our mission to craft handpicked, elegant collections for every special moment.
+          Discover the story behind <strong>Hea By Pink Bubbles</strong>, the
+          vision of our founder Shefeeja Nizar, and our mission to craft
+          handpicked, elegant collections for every special moment.
         </p>
       </div>
 
       {/* Founder Section */}
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center bg-white/90   shadow-2xl p-10 md:p-16 gap-12 md:gap-20">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center bg-white/70   shadow-2xl p-10 md:p-16 gap-12 md:gap-20">
         {/* Founder Photo */}
         <div className="flex-shrink-0 w-64 h-64 md:w-72 md:h-72 rounded-full overflow-hidden shadow-xl border-4 border-[#D8E2C4] flex items-center justify-center">
           <img
@@ -30,18 +31,21 @@ export default function FounderVision() {
         {/* Founder Bio */}
         <div className="text-center md:text-left space-y-4 md:space-y-6">
           <h2 className="text-3xl md:text-4xl text-[#556B2F] font-semibold tracking-wide">
-            Shefeeja Nizar
+            SHEFEEJA NIZAR
           </h2>
-          <p className="text-[#556B2F] font-medium text-lg md:text-xl">
+          <p className="text-[#556B2F] font-medium text-sm md:text-xl">
             Founder & Creative Director
           </p>
           <p className="text-[#3A3F1F]/80 leading-relaxed tracking-wide">
-            What began as "Pink Bubbles" has blossomed into the boutique <strong>Hea By Pink Bubbles</strong>. 
-            Shefeeja’s vision is simple yet powerful: to create collections that make every occasion memorable 
-            and every outfit unforgettable.
+            What began as Pink Bubbles has grown into Hea By Pink Bubbles, built
+            on the idea of creating clothing that truly matters to people.
+            Shefeeja’s vision is to design collections that suit real occasions,
+            reflect personal style, and help individuals feel confident in what
+            they wear
           </p>
           <p className="text-[#3A3F1F]/80 leading-relaxed tracking-wide italic">
-            “Fashion is not just what we wear—it’s how we celebrate life’s moments.” — Shefeeja Nizar
+            “Fashion is not just what we wear—it’s how we celebrate life’s
+            moments.” — Shefeeja Nizar
           </p>
         </div>
       </div>
@@ -52,13 +56,10 @@ export default function FounderVision() {
           Our Mission
         </h2>
         <p className="text-[#3A3F1F]/80 md:text-lg leading-relaxed tracking-wide max-w-3xl mx-auto">
-         Our mission is to provide high-quality, custom-tailored garments that bring our clients’ clothing visions to life
+          Our mission is to provide high-quality, custom-tailored garments that
+          bring our clients’ clothing visions to life
         </p>
       </div>
-
-
-   
-  
     </section>
   );
 }

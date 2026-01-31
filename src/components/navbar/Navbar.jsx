@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { Menu, X, Phone, Mail } from "lucide-react";
+import { Menu, X, Phone, Mail, Instagram } from "lucide-react";
 
 const navLinks = [
   { name: "Home", path: "/" },
@@ -20,16 +20,24 @@ export default function Navbar() {
         <div className="flex flex-wrap items-center gap-2 text-xs sm:text-sm font-MeaCulpa-regular tracking-wide text-center">
           <span className="text-sm sm:text-lg">Hea By Pink Bubbles</span>
           <span className="hidden sm:inline-block opacity-70"> | </span>
-          <span className="opacity-90">
-            Curated Styles • Timeless Pieces
-          </span>
+          <span className="opacity-90">Curated Styles • Timeless Pieces</span>
         </div>
       </div>
 
       {/* Middle bar */}
       <div className="w-full flex items-center justify-between px-4 md:px-[70px] py-4 text-sm font-body font-medium">
         {/* Left */}
-        <span className="hidden md:block font-MeaCulpa-regular">Search</span>
+        <span className="hidden md:block font-MeaCulpa-regular">
+          <a
+            href="https://www.instagram.com/hea_bypinkbubbles/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 hover:text-[#8B9B68] transition"
+          >
+            <Instagram className="w-4 h-4" />
+            <span className="text-sm">hea_bypinkbubbles</span>
+          </a>
+        </span>
 
         {/* Center */}
         <span className="font-Lato text-amber-600 text-2xl">Hea</span>
@@ -37,7 +45,7 @@ export default function Navbar() {
         {/* Right - Desktop Contact */}
         <div className="hidden md:flex items-center gap-4 font-MeaCulpa-regular text-gray-700 text-sm">
           <a
-            href="https://wa.me/917356524462"
+            href="https://wa.me/917356524462?text=I%20would%20like%20to%20enquire"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 hover:text-[#8B9B68]"
@@ -116,7 +124,7 @@ export default function Navbar() {
           <div className="pt-4 border-t border-gray-200 w-full flex justify-center">
             <div className="font-MeaCulpa-regular text-gray-700 flex flex-col items-center gap-3 text-xs">
               <a
-                href="https://wa.me/917356524462"
+                href="https://wa.me/917356524462?text=I%20would%20like%20to%20enquire"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 hover:text-[#8B9B68]"
@@ -131,6 +139,15 @@ export default function Navbar() {
               >
                 <Mail className="w-4 h-4" />
                 <span>heabypinkbubbles@gmail.com</span>
+              </a>
+              <a
+                href="https://www.instagram.com/hea_bypinkbubbles/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 hover:text-[#8B9B68] transition"
+              >
+                <Instagram className="w-4 h-4" />
+                <span className="text-sm">hea_bypinkbubbles</span>
               </a>
             </div>
           </div>
