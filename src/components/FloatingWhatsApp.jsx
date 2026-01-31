@@ -11,8 +11,7 @@ export default function FloatingWhatsApp() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chat on WhatsApp"
-      className="
-  fixed bottom-6 left-6 z-50
+      className="fixed bottom-6 left-6 z-50
   flex items-center gap-3
 
   bg-white/90
