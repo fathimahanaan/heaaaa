@@ -25,7 +25,7 @@ const routes = [
   { path: "/collections", element: (
       <>
         <Collections />
-        <Lookbook />
+       
       </>
     ),
   },
