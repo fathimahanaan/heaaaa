@@ -21,7 +21,7 @@ export default function Collections() {
     <section className="bg-[#D8E2C4] py-20 px-4 sm:px-6 md:px-12">
       {/* Header */}
       <div className="max-w-3xl mx-auto text-center mb-12">
-        <h1 className="text-4xl md:text-5xl font-MeaCulpa-regular   text-[#262A12] mb-4">
+        <h1 className="text-4xl md:text-5xl font-MeaCulpa-regular   text-amber-900 mb-4">
           The Collections
         </h1>
         <p className="text-[#556B2F] md:text-lg leading-relaxed tracking-wide  text-opacity-90 max-w-3xl mx-auto text-center">

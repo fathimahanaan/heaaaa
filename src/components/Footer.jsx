@@ -73,7 +73,7 @@ export default function Footer() {
             alt="logo"
             className="h-20 w-auto mb-4" // large logo
           />
-          <h2 className="font-MeaCulpa-regular text-3xl">
+          <h2 className="font-MeaCulpa-regular  text-amber-900 text-3xl">
             Hea By Pink Bubbles
           </h2>
         </div>

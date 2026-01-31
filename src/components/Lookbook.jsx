@@ -117,7 +117,7 @@ export default function ElegantLookbook() {
     <section className="bg-gradient-to-b from-[#F4F3EF] to-[#E8E7E2] px-4 sm:px-6 md:px-12 py-24">
       {/* Header */}
       <div className="max-w-3xl mx-auto text-center mb-20">
-        <h1 className="text-4xl md:text-6xl font-MeaCulpa-regular text-[#262A12] mb-6 tracking-tight">
+        <h1 className="text-4xl md:text-6xl font-MeaCulpa-regular text-amber-900 mb-6 tracking-tight">
           The Look Book
         </h1>
         <p className="text-[#3A3F1F]/70 leading-loose md:text-lg">
