@@ -2,8 +2,9 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Ballpit from "./Ballpit";
 
-const images = ["/s.jpeg", "/mohammed.jpeg","/neeenu.jpeg",  "/aro.jpeg"  ];
+const images = ["/s.jpeg", "/mohammed.jpeg", "/neeenu.jpeg", "/aro.jpeg"];
 
 export default function Collections() {
   const settings = {
@@ -30,7 +31,6 @@ export default function Collections() {
           handpicked and custom made for your special moments.
         </p>
       </div>
-
       {/* Image Carousel */}
       <div className="max-w-4xl mx-auto">
         <Slider {...settings}>
@@ -45,6 +45,25 @@ export default function Collections() {
           ))}
         </Slider>
       </div>
+   
+<div
+  style={{
+    position: "relative",
+    overflow: "hidden",
+    minHeight: "500px",
+    maxHeight: "500px",
+    width: "100%",
+  }}
+>
+  <Ballpit
+    count={200}
+    gravity={0.01}
+    friction={0.9975}
+    wallBounce={0.95}
+    followCursor={false}
+    colors={[0xA8E6CF, 0xFFFFFF, 0xFFC0CB]}// <-- pastel green and white
+  />
+</div>
     </section>
   );
 }
