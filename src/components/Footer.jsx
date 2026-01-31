@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import { Instagram, Phone, Mail, MapPin } from "lucide-react";
 
 const navLinks = [
@@ -43,10 +44,9 @@ const socialLinks = [
 export default function Footer() {
   return (
     <footer className="bg-white border-t border-gray-200 text-[#2E3A16]">
-      {/* Main footer bar */}
       <div className="w-full flex flex-col md:flex-row items-center md:items-start justify-center md:justify-between px-4 md:px-[70px] py-12 text-sm font-body gap-12 md:gap-0 text-center md:text-left">
-        
-        {/* Left - Contact */}
+
+        {/* Contact Section */}
         <div className="flex flex-col items-center md:items-start gap-4">
           <h3 className="font-semibold tracking-wide">Contact</h3>
           {contactLinks.map((contact, idx) => {
@@ -74,32 +74,41 @@ export default function Footer() {
           })}
         </div>
 
-        {/* Center - Nav Links */}
+        {/* Navigation Links + Logo */}
         <div className="flex flex-col items-center gap-4">
           <h3 className="font-semibold tracking-wide mb-2">Explore</h3>
-          <div className="flex flex-col md:flex-row gap-2 md:gap-6 text-[#4A3428]">
-            {navLinks.map((link, idx) => (
-              <a
+          <div className="flex flex-col md:flex-row gap-2 md:gap-6 text-[#4A3428] mb-6">
+            {navLinks.map(({ name, path }, idx) => (
+              <NavLink
                 key={idx}
-                href={link.path}
-                className="hover:text-[#7A4B12] transition-colors"
+                to={path}
+                end={path === "/"}
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-[#8B9B68]"
+                    : "text-amber-900 hover:text-[#7A4B12]"
+                }
+                onClick={() =>
+                  window.scrollTo({
+                    top: 0,
+                    behavior: "smooth",
+                  })
+                }
               >
-                {link.name}
-              </a>
+                {name}
+              </NavLink>
             ))}
           </div>
-        </div>
 
-        {/* Right - Logo & Social */}
-        <div className="flex flex-col items-center md:items-end gap-4">
-          <img
-            src="/logo.png" // replace with your logo
-            alt="logo"
-            className="h-20 w-auto mb-2"
-          />
-          <h2 className="font-MeaCulpa-regular text-[#7A4B12] text-3xl mb-4">
+          {/* Logo & Heading */}
+          <img src="/logo.png" alt="logo" className="h-35 w-auto mb-2" />
+          <h2 className="font-MeaCulpa-regular text-[#7A4B12] text-3xl">
             Hea By Pink Bubbles
           </h2>
+        </div>
+
+        {/* Social Links */}
+        <div className="flex flex-col items-center md:items-end gap-4">
           <h3 className="font-semibold tracking-wide">Follow Us</h3>
           {socialLinks.map((social, idx) => {
             const Icon = social.icon;
@@ -119,7 +128,7 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Bottom bar */}
+      {/* Bottom Bar */}
       <div className="border-t border-gray-200 py-4 text-center font-semibold text-xs text-[#7A4B12]">
         © {new Date().getFullYear()} Hea By Pink Bubbles. All rights reserved.
       </div>
