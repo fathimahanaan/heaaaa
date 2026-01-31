@@ -98,6 +98,18 @@ const lookbookItems = [
     title: "Everyday Edit",
     description: "Simple styling that highlights the beauty of everyday wear.",
   },
+    {
+    type: "video",
+    src: "/fathi.mp4",
+    title: "Effortless Movement",
+    description: "Gentle motion showcasing ease, flow, and effortless styling.",
+  },
+    {
+    type: "image",
+    src: "/mohammed.jpeg",
+    title: "Effortless Movement",
+    description: "Gentle motion showcasing ease, flow, and effortless styling.",
+  },
 ];
 
 export default function ElegantLookbook() {

@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const images = ["/s.jpeg", "/adu.jpeg", "/n.jpeg", "/nh.jpeg"];
+const images = ["/s.jpeg", "/mohammed.jpeg","/neeenu.jpeg", "/fa.jpeg","/aro.jpeg"  ];
 
 export default function Collections() {
   const settings = {
