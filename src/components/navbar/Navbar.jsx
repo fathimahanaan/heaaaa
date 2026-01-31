@@ -10,6 +10,27 @@ const navLinks = [
   { name: "Our Story", path: "/about" },
 ];
 
+const contactLinks = [
+  {
+    href: "https://wa.me/917356524462?text=I%20would%20like%20to%20enquire",
+    icon: Phone,
+    label: "+91 73565 24462",
+    ariaLabel: "Chat with Hea By Pink Bubbles on WhatsApp",
+  },
+  {
+    href: "mailto:heabypinkbubbles@gmail.com",
+    icon: Mail,
+    label: "heabypinkbubbles@gmail.com",
+    ariaLabel: "Send email to Hea By Pink Bubbles",
+  },
+  {
+    href: "https://www.instagram.com/hea_bypinkbubbles/",
+    icon: Instagram,
+    label: "hea_bypinkbubbles",
+    ariaLabel: "Visit Hea By Pink Bubbles Instagram",
+  },
+];
+
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
@@ -26,43 +47,42 @@ export default function Navbar() {
 
       {/* Middle bar */}
       <div className="w-full flex items-center justify-between px-4 md:px-[70px] py-4 text-sm font-body font-medium">
-        {/* Left */}
+        {/* Left - Instagram */}
         <span className="hidden md:block font-MeaCulpa-regular">
           <a
-            href="https://www.instagram.com/hea_bypinkbubbles/"
+            href={contactLinks[2].href}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 hover:text-[#8B9B68] transition"
           >
             <Instagram className="w-4 h-4" />
-            <span className="text-sm">hea_bypinkbubbles</span>
+            <span className="text-sm">{contactLinks[2].label}</span>
           </a>
         </span>
 
-        {/* Center */}
+        {/* Center - Logo */}
         <span className="font-Lato text-amber-600 text-2xl">Hea</span>
 
         {/* Right - Desktop Contact */}
         <div className="hidden md:flex items-center gap-4 font-MeaCulpa-regular text-gray-700 text-sm">
-          <a
-            href="https://wa.me/917356524462?text=I%20would%20like%20to%20enquire"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 hover:text-[#8B9B68]"
-          >
-            <Phone className="w-4 h-4" />
-            <span>+91 73565 24462</span>
-          </a>
-
-          <span className="opacity-60">|</span>
-
-          <a
-            href="mailto:heabypinkbubbles@gmail.com"
-            className="flex items-center gap-2 hover:text-[#8B9B68]"
-          >
-            <Mail className="w-4 h-4" />
-            <span>heabypinkbubbles@gmail.com</span>
-          </a>
+          {contactLinks.slice(0, 2).map((contact) => {
+            const Icon = contact.icon;
+            return (
+              <React.Fragment key={contact.label}>
+                <a
+                  href={contact.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 hover:text-[#8B9B68]"
+                  aria-label={contact.ariaLabel}
+                >
+                  <Icon className="w-4 h-4" />
+                  <span>{contact.label}</span>
+                </a>
+                {contact.label === "+91 73565 24462" && <span className="opacity-60">|</span>}
+              </React.Fragment>
+            );
+          })}
         </div>
 
         {/* Mobile menu button */}
@@ -123,32 +143,22 @@ export default function Navbar() {
           {/* Mobile Contact Info */}
           <div className="pt-4 border-t border-gray-200 w-full flex justify-center">
             <div className="font-MeaCulpa-regular text-gray-700 flex flex-col items-center gap-3 text-xs">
-              <a
-                href="https://wa.me/917356524462?text=I%20would%20like%20to%20enquire"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 hover:text-[#8B9B68]"
-              >
-                <Phone className="w-4 h-4" />
-                <span>+91 73565 24462</span>
-              </a>
-
-              <a
-                href="mailto:heabypinkbubbles@gmail.com"
-                className="flex items-center gap-2 hover:text-[#8B9B68]"
-              >
-                <Mail className="w-4 h-4" />
-                <span>heabypinkbubbles@gmail.com</span>
-              </a>
-              <a
-                href="https://www.instagram.com/hea_bypinkbubbles/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 hover:text-[#8B9B68] transition"
-              >
-                <Instagram className="w-4 h-4" />
-                <span className="text-sm">hea_bypinkbubbles</span>
-              </a>
+              {contactLinks.map((contact) => {
+                const Icon = contact.icon;
+                return (
+                  <a
+                    key={contact.label}
+                    href={contact.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 hover:text-[#8B9B68]"
+                    aria-label={contact.ariaLabel}
+                  >
+                    <Icon className="w-4 h-4" />
+                    <span>{contact.label}</span>
+                  </a>
+                );
+              })}
             </div>
           </div>
         </ul>

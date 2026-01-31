@@ -1,6 +1,37 @@
 import React from "react";
 import { Instagram, Phone, Mail, MapPin } from "lucide-react";
 
+const contactLinks = [
+  {
+    icon: MapPin,
+    text: (
+      <>
+        Sana Arcade, Chittilappally
+        <br />
+        PIN 680551, Thrissur
+      </>
+    ),
+  },
+  {
+    icon: Phone,
+    text: "+91 73565 24462",
+    href: "https://wa.me/917356524462?text=I%20would%20like%20to%20enquire",
+  },
+  {
+    icon: Mail,
+    text: "heabypinkbubbles@gmail.com",
+    href: "mailto:heabypinkbubbles@gmail.com",
+  },
+];
+
+const socialLinks = [
+  {
+    icon: Instagram,
+    label: "hea_bypinkbubbles",
+    href: "https://www.instagram.com/hea_bypinkbubbles/",
+  },
+];
+
 export default function Footer() {
   return (
     <footer className="bg-white border-t border-gray-200 text-[#2E3A16]">
@@ -20,48 +51,50 @@ export default function Footer() {
         <div className="space-y-4">
           <h3 className="font-semibold tracking-wide">Contact</h3>
 
-          <div className="flex items-center justify-center md:justify-start gap-3 text-sm">
-            <MapPin className="w-4 h-4" />
-            <span>
-              Sana Arcade, Chittilappally
-              <br />
-              PIN 680551, Thrissur
-            </span>
-          </div>
-
-          <a
-            href="https://wa.me/917356524462?text=I%20would%20like%20to%20enquire"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-[#8B9B68]"
-          >
-            +91 73565 24462
-          </a>
-
-          <div className="flex items-center justify-center md:justify-start gap-3 text-sm">
-            <Mail className="w-4 h-4" />
-            <a
-              href="mailto:heabypinkbubbles@gmail.com"
-              className="hover:text-[#8B9B68]"
-            >
-              heabypinkbubbles@gmail.com
-            </a>
-          </div>
+          {contactLinks.map((contact, idx) => {
+            const Icon = contact.icon;
+            return contact.href ? (
+              <a
+                key={idx}
+                href={contact.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center md:justify-start gap-3 text-sm hover:text-[#8B9B68]"
+              >
+                <Icon className="w-4 h-4" />
+                <span>{contact.text}</span>
+              </a>
+            ) : (
+              <div
+                key={idx}
+                className="flex items-center justify-center md:justify-start gap-3 text-sm"
+              >
+                <Icon className="w-4 h-4" />
+                <span>{contact.text}</span>
+              </div>
+            );
+          })}
         </div>
 
         {/* Social */}
         <div className="space-y-4">
           <h3 className="font-semibold tracking-wide">Follow Us</h3>
 
-          <a
-            href="https://www.instagram.com/hea_bypinkbubbles/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 text-sm hover:text-[#8B9B68]"
-          >
-            <Instagram className="w-5 h-5" />
-            <span>hea_bypinkbubbles</span>
-          </a>
+          {socialLinks.map((social, idx) => {
+            const Icon = social.icon;
+            return (
+              <a
+                key={idx}
+                href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 text-sm hover:text-[#8B9B68]"
+              >
+                <Icon className="w-5 h-5" />
+                <span>{social.label}</span>
+              </a>
+            );
+          })}
         </div>
       </div>
 
