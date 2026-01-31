@@ -61,12 +61,9 @@ export default function Navbar() {
         </span>
 
         {/* Center - Logo */}
-        <div className="flex items-center space-x-2">
-          <img
-            src="/gpt.png"
-            alt="Logo"
-            className="h-14 w-auto" // Increased logo height, keeps aspect ratio
-          />
+        <div className="flex items-center space-x-1">
+          <img src="/logo.png" alt="Logo" className="h-20 w-auto" />
+          <p className="font-MeaCulpa-regular text-2xl text-amber-900">Hea By Pink Bubbles</p>
         </div>
 
         {/* Right - Desktop Contact */}

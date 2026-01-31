@@ -31,7 +31,7 @@ export default function FounderVision() {
         {/* Founder Bio */}
         <div className="text-center md:text-left space-y-4 md:space-y-6">
           <h2 className="text-3xl md:text-4xl text-[#556B2F] font-semibold tracking-wide">
-            SHEFEEJA NIZAR
+            SHAFEEJA
           </h2>
           <p className="text-[#556B2F] font-medium text-sm md:text-xl">
             Founder & Creative Director
