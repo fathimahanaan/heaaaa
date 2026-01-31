@@ -1,12 +1,13 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Layout from "./Layout";
+ 
 
 import Home from "./components/home/Home";
 import Collections from "./components/Collections";
 import Lookbook from "./components/Lookbook";
 import VisitUs from "./components/VisitUs";
 import FounderVision from "./components/FounderVision";
+import Layout from "./Layout";
 
 export default function App() {
   return (
