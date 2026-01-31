@@ -61,7 +61,13 @@ export default function Navbar() {
         </span>
 
         {/* Center - Logo */}
-        <span className="font-Lato text-amber-600 text-2xl">Hea</span>
+        <div className="flex items-center space-x-2">
+          <img
+            src="/gpt.png"
+            alt="Logo"
+            className="h-14 w-auto" // Increased logo height, keeps aspect ratio
+          />
+        </div>
 
         {/* Right - Desktop Contact */}
         <div className="hidden md:flex items-center gap-4 font-MeaCulpa-regular text-gray-700 text-sm">
@@ -79,7 +85,9 @@ export default function Navbar() {
                   <Icon className="w-4 h-4" />
                   <span>{contact.label}</span>
                 </a>
-                {contact.label === "+91 73565 24462" && <span className="opacity-60">|</span>}
+                {contact.label === "+91 73565 24462" && (
+                  <span className="opacity-60">|</span>
+                )}
               </React.Fragment>
             );
           })}

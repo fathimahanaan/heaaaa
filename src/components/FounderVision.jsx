@@ -43,10 +43,7 @@ export default function FounderVision() {
             reflect personal style, and help individuals feel confident in what
             they wear
           </p>
-          <p className="text-[#3A3F1F]/80 leading-relaxed tracking-wide italic">
-            “Fashion is not just what we wear—it’s how we celebrate life’s
-            moments.” — Shefeeja Nizar
-          </p>
+         
         </div>
       </div>
 
@@ -56,8 +53,7 @@ export default function FounderVision() {
           Our Mission
         </h2>
         <p className="text-[#3A3F1F]/80 md:text-lg leading-relaxed tracking-wide max-w-3xl mx-auto">
-          Our mission is to provide high-quality, custom-tailored garments that
-          bring our clients’ clothing visions to life
+          "Our mission is to deliver beautifully, custom-tailored garments that brings our clients’ clothing vision to life".
         </p>
       </div>
     </section>

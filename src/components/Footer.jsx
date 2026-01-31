@@ -35,22 +35,12 @@ const socialLinks = [
 export default function Footer() {
   return (
     <footer className="bg-white border-t border-gray-200 text-[#2E3A16]">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 py-12 grid gap-10 md:grid-cols-3 text-center md:text-left">
-        {/* Brand */}
-        <div className="space-y-4">
-          <h2 className="font-MeaCulpa-regular text-3xl">
-            Hea By Pink Bubbles
-          </h2>
-          <p className="text-sm leading-relaxed text-[#2E3A16]">
-            A boutique dedicated to thoughtfully designed and custom-tailored
-            garments, created to bring your clothing ideas to life.
-          </p>
-        </div>
-
-        {/* Contact */}
-        <div className="space-y-4">
+      {/* Main footer bar */}
+      <div className="w-full flex flex-col md:flex-row items-center md:items-start justify-between px-4 md:px-[70px] py-12 text-sm font-body">
+        
+        {/* Left - Contact */}
+        <div className="flex flex-col items-center md:items-start gap-4 mb-8 md:mb-0">
           <h3 className="font-semibold tracking-wide">Contact</h3>
-
           {contactLinks.map((contact, idx) => {
             const Icon = contact.icon;
             return contact.href ? (
@@ -59,7 +49,7 @@ export default function Footer() {
                 href={contact.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center md:justify-start gap-3 text-sm hover:text-[#8B9B68]"
+                className="flex items-center gap-2 hover:text-[#8B9B68] text-center md:text-left"
               >
                 <Icon className="w-4 h-4" />
                 <span>{contact.text}</span>
@@ -67,7 +57,7 @@ export default function Footer() {
             ) : (
               <div
                 key={idx}
-                className="flex items-center justify-center md:justify-start gap-3 text-sm"
+                className="flex items-center gap-2 text-center md:text-left"
               >
                 <Icon className="w-4 h-4" />
                 <span>{contact.text}</span>
@@ -76,10 +66,21 @@ export default function Footer() {
           })}
         </div>
 
-        {/* Social */}
-        <div className="space-y-4">
-          <h3 className="font-semibold tracking-wide">Follow Us</h3>
+        {/* Center - Logo */}
+        <div className="flex flex-col items-center mb-8 md:mb-0">
+          <img
+            src="/gpt.png" // replace with your logo
+            alt="Logo"
+            className="h-20 w-auto mb-4" // large logo
+          />
+          <h2 className="font-MeaCulpa-regular text-3xl">
+            Hea By Pink Bubbles
+          </h2>
+        </div>
 
+        {/* Right - Social */}
+        <div className="flex flex-col items-center md:items-end gap-4">
+          <h3 className="font-semibold tracking-wide">Follow Us</h3>
           {socialLinks.map((social, idx) => {
             const Icon = social.icon;
             return (
@@ -88,7 +89,7 @@ export default function Footer() {
                 href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 text-sm hover:text-[#8B9B68]"
+                className="flex items-center gap-2 hover:text-[#8B9B68]"
               >
                 <Icon className="w-5 h-5" />
                 <span>{social.label}</span>
