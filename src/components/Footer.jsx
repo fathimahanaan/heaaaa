@@ -69,7 +69,7 @@ export default function Footer() {
         {/* Center - Logo */}
         <div className="flex flex-col items-center mb-8 md:mb-0">
           <img
-            src="/gpt.png" // replace with your logo
+            src="/logo.png" // replace with your logo
             alt="logo"
             className="h-20 w-auto mb-4" // large logo
           />
