@@ -1,6 +1,14 @@
 import React from "react";
 import { Instagram, Phone, Mail, MapPin } from "lucide-react";
 
+const navLinks = [
+  { name: "Home", path: "/" },
+  { name: "Collections", path: "/collections" },
+  { name: "Lookbook", path: "/lookbook" },
+  { name: "Visit Us", path: "/visit" },
+  { name: "Our Story", path: "/about" },
+];
+
 const contactLinks = [
   {
     icon: MapPin,
@@ -36,10 +44,10 @@ export default function Footer() {
   return (
     <footer className="bg-white border-t border-gray-200 text-[#2E3A16]">
       {/* Main footer bar */}
-      <div className="w-full flex flex-col md:flex-row items-center md:items-start justify-between px-4 md:px-[70px] py-12 text-sm font-body">
+      <div className="w-full flex flex-col md:flex-row items-center md:items-start justify-center md:justify-between px-4 md:px-[70px] py-12 text-sm font-body gap-12 md:gap-0 text-center md:text-left">
         
         {/* Left - Contact */}
-        <div className="flex flex-col items-center md:items-start gap-4 mb-8 md:mb-0">
+        <div className="flex flex-col items-center md:items-start gap-4">
           <h3 className="font-semibold tracking-wide">Contact</h3>
           {contactLinks.map((contact, idx) => {
             const Icon = contact.icon;
@@ -49,7 +57,7 @@ export default function Footer() {
                 href={contact.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 hover:text-[#8B9B68] text-center md:text-left"
+                className="flex flex-col md:flex-row items-center md:items-start gap-2 hover:text-[#8B9B68]"
               >
                 <Icon className="w-4 h-4" />
                 <span>{contact.text}</span>
@@ -57,7 +65,7 @@ export default function Footer() {
             ) : (
               <div
                 key={idx}
-                className="flex items-center gap-2 text-center md:text-left"
+                className="flex flex-col md:flex-row items-center md:items-start gap-2"
               >
                 <Icon className="w-4 h-4" />
                 <span>{contact.text}</span>
@@ -66,20 +74,32 @@ export default function Footer() {
           })}
         </div>
 
-        {/* Center - Logo */}
-        <div className="flex flex-col items-center mb-8 md:mb-0">
+        {/* Center - Nav Links */}
+        <div className="flex flex-col items-center gap-4">
+          <h3 className="font-semibold tracking-wide mb-2">Explore</h3>
+          <div className="flex flex-col md:flex-row gap-2 md:gap-6 text-[#4A3428]">
+            {navLinks.map((link, idx) => (
+              <a
+                key={idx}
+                href={link.path}
+                className="hover:text-[#7A4B12] transition-colors"
+              >
+                {link.name}
+              </a>
+            ))}
+          </div>
+        </div>
+
+        {/* Right - Logo & Social */}
+        <div className="flex flex-col items-center md:items-end gap-4">
           <img
             src="/logo.png" // replace with your logo
             alt="logo"
-            className="h-20 w-auto mb-4" // large logo
+            className="h-20 w-auto mb-2"
           />
-          <h2 className="font-MeaCulpa-regular  text-amber-900 text-3xl">
+          <h2 className="font-MeaCulpa-regular text-[#7A4B12] text-3xl mb-4">
             Hea By Pink Bubbles
           </h2>
-        </div>
-
-        {/* Right - Social */}
-        <div className="flex flex-col items-center md:items-end gap-4">
           <h3 className="font-semibold tracking-wide">Follow Us</h3>
           {socialLinks.map((social, idx) => {
             const Icon = social.icon;
@@ -100,7 +120,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom bar */}
-      <div className="border-t border-gray-200 py-4 text-center text-xs text-amber-900">
+      <div className="border-t border-gray-200 py-4 text-center font-semibold text-xs text-[#7A4B12]">
         © {new Date().getFullYear()} Hea By Pink Bubbles. All rights reserved.
       </div>
     </footer>
