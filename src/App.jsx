@@ -7,14 +7,16 @@ import Lookbook from "./components/Lookbook";
 import VisitUs from "./components/VisitUs";
 import FounderVision from "./components/FounderVision";
 import Layout from "./Layout";
-import FloatingWhatsApp from "./components/FloatingWhatsapp";
+import WhatsApp from "./components/Whatsapp";
+ 
+ 
 
 const routes = [
   {
     path: "/",
     element: (
       <>
-      <FloatingWhatsApp/>
+    <WhatsApp/>
         <Home />
         <FounderVision />
         <Collections />

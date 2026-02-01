@@ -1,7 +1,7 @@
 import React from "react";
 import { Phone } from "lucide-react";
 
-export default function FloatingWhatsApp() {
+export default function WhatsApp() {
   const whatsappNumber = "917356524462";
   const message = "Hi, I would like to enquire";
 
