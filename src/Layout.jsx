@@ -9,9 +9,7 @@ export default function Layout({ children }) {
       <Navbar />
 
       {/* Page content */}
-      <main className="pt-[180px]">
-        {children}
-      </main>
+      <main className="pt-[180px]">{children}</main>
 
       {/* Footer */}
       <Footer />
