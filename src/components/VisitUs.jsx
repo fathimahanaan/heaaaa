@@ -34,7 +34,7 @@ export default function VisitUsPage() {
         </div>
 
         {/* Contact Card */}
-        <div className="max-w-3xl mx-auto bg-white/40 rounded-md p-12 shadow-lg backdrop-blur-sm mb-16">
+        <div className="max-w-3xl mx-auto bg-white/60 rounded-md p-12 shadow-lg backdrop-blur-sm mb-16">
           {/* Contact Info */}
           <div className="flex flex-col gap-4 mb-8 text-[#556B2F] font-semibold text-center">
             <div className="flex items-center justify-center gap-2">
@@ -100,7 +100,7 @@ export default function VisitUsPage() {
 
             <button
               type="submit"
-              className="bg-none  border border-amber-900 text-amber-900 font-semibold py-2 px-4 rounded-md hover:bg-amber-800/50 hover:text-white  transition"
+              className="bg-none  border border-amber-900 text-amber-900 font-semibold py-2 px-4 rounded-md hover:bg-amber-700/50 hover:text-white  transition"
             >
               Message
             </button>
