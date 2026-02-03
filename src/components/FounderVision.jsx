@@ -23,7 +23,7 @@ export default function FounderVision() {
       <div className="max-w-4xl mx-auto bg-white/80 shadow-2xl p-10 md:p-16 flex flex-col items-center space-y-16">
         {/* Shefija (Primary Founder) */}
         <div className="flex flex-col items-center text-center space-y-6">
-          <div className="w-62 h-62 md:w-80 md:h-80 rounded-full overflow-hidden shadow-xl border-4 border-[#D8E2C4] flex items-center justify-center mb-4">
+          <div className="w-52 h-52 md:w-60 md:h-60 rounded-full overflow-hidden shadow-xl border-4 border-[#D8E2C4] flex items-center justify-center mb-4">
             <img
               src={shefijaImage}
               alt="Shefija, Founder & Creative Director"
