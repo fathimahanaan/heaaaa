@@ -100,9 +100,9 @@ export default function VisitUsPage() {
 
             <button
               type="submit"
-              className="bg-none  border border-amber-900 text-amber-900 font-semibold py-2 px-4 rounded-md hover:bg-amber-700/50 hover:text-white  transition"
+              className="bg-none border border-amber-900 text-amber-900 font-semibold py-2 px-4 rounded-md hover:bg-amber-700/50 hover:text-white transition"
             >
-              Message
+              Prepare Message
             </button>
           </form>
 
@@ -137,10 +137,12 @@ export default function VisitUsPage() {
                 </a>
 
                 <a
-                  href={`https://www.instagram.com/${instagramProfile}/`}
+                  href={`https://www.instagram.com/direct/new/?text=${encodeURIComponent(
+                    whatsappText,
+                  )}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-pink-900  px-4 py-2 rounded-md hover:text-pink-400"
+                  className="flex items-center gap-2 text-pink-900 px-4 py-2 rounded-md hover:text-pink-400"
                 >
                   <Instagram className="w-4 h-4" />
                   Instagram
