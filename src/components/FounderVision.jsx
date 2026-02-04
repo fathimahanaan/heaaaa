@@ -1,6 +1,6 @@
 import React from "react";
 
-const shefijaImage = "/shee.jpeg"; // Shefija's photo
+const shefijaImage = "/whaa.jpeg"; // Shefija's photo
 const roppaImage = "/roopa.jpeg"; // Roopa's photo
 
 export default function FounderVision() {
@@ -27,7 +27,7 @@ export default function FounderVision() {
             <img
               src={shefijaImage}
               alt="Shefija, Founder & Creative Director"
-              className="w-full h-full object-cover object-[90%_50%]"
+              className="w-full h-full object-cover"
             />
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl text-amber-900 font-bold tracking-wide">
