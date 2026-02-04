@@ -1,6 +1,6 @@
 import React from "react";
 
-const shefijaImage = "/shefeeja.jpeg"; // Shefija's photo
+const shefijaImage = "/shee.jpeg"; // Shefija's photo
 const roppaImage = "/roopa.jpeg"; // Roopa's photo
 
 export default function FounderVision() {
@@ -23,11 +23,11 @@ export default function FounderVision() {
       <div className="max-w-4xl mx-auto bg-white/80 shadow-2xl p-10 md:p-16 flex flex-col items-center space-y-16">
         {/* Shefija (Primary Founder) */}
         <div className="flex flex-col items-center text-center space-y-6">
-          <div className="w-52 h-52 md:w-60 md:h-60 rounded-full overflow-hidden shadow-xl border-4 border-[#D8E2C4] flex items-center justify-center mb-4">
+          <div className="w-52 h-52 md:w-60 md:h-60 rounded-full overflow-hidden shadow-xl border-4 border-[#D8E2C4] flex items-center justify-center mb-4 group">
             <img
               src={shefijaImage}
               alt="Shefija, Founder & Creative Director"
-              className="w-full h-full object-contain"
+              className="w-full h-full object-cover object-[90%_50%]"
             />
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl text-amber-900 font-bold tracking-wide">
