@@ -1,5 +1,6 @@
 import React from "react";
 import { Phone } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function WhatsApp() {
   const whatsappNumber = "917356524462";
@@ -27,8 +28,7 @@ export default function WhatsApp() {
   transition-all duration-300 ease-out
 "
     >
-      <Phone className="w-5 h-5" />
-      <span className="hidden sm:inline text-sm font-medium">WhatsApp</span>
+      <FaWhatsapp className="w-6 h-6" />
     </a>
   );
 }
