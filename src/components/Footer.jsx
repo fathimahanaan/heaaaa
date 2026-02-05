@@ -59,7 +59,7 @@ export default function Footer() {
                 href={contact.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex flex-col md:flex-row items-center md:items-start gap-2 hover:text-green-600 transition"
+                className="flex flex-col md:flex-row items-center md:items-start gap-2 text-amber-900 hover:text-amber-600 transition"
               >
                 <Icon className="w-4 h-4" />
                 <span>{contact.text}</span>
@@ -67,7 +67,7 @@ export default function Footer() {
             ) : (
               <div
                 key={idx}
-                className="flex flex-col md:flex-row items-center md:items-start gap-2"
+                className="flex flex-col md:flex-row items-center md:items-start gap-2 text-amber-900 hover:text-amber-600"
               >
                 <Icon className="w-4 h-4  " />
                 <span>{contact.text}</span>
@@ -80,7 +80,7 @@ export default function Footer() {
         <div className="flex flex-col items-center gap-4">
           <h3 className="font-semibold tracking-wide mb-2">Explore</h3>
 
-          <div className="flex flex-col md:flex-row gap-2 md:gap-6 text-[#4A3428] mb-6">
+          <div className="flex flex-col text-amber-900 md:flex-row gap-2 md:gap-6 text-amber-900 mb-6">
             {navLinks.map(({ name, path }, idx) => (
               <NavLink
                 key={idx}
@@ -124,9 +124,9 @@ export default function Footer() {
                 href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 hover:text-[#8B9B68] transition"
+                className="flex items-center text-amber-900 gap-2 hover:text-amber-500 transition"
               >
-                <Icon className="w-5 h-5" />
+                <Icon className="w-5 h-5 text-amber-900" />
                 <span>{social.label}</span>
               </a>
             );
@@ -135,7 +135,7 @@ export default function Footer() {
           <p className="font-semibold font-4xl">Customer Service</p>
              <NavLink
               to="/privacy-policy"
-              className="text-amber-900 hover:text-[#7A4B12]"
+              className="text-amber-900 hover:text-amber-600"
               onClick={() =>
                 window.scrollTo({
                   top: 0,
@@ -147,7 +147,7 @@ export default function Footer() {
             </NavLink>
             <NavLink
               to="/Terms-and-conditions"
-              className="text-amber-900 hover:text-[#7A4B12]"
+              className="text-amber-900  hover:text-amber-600"
               onClick={() =>
                 window.scrollTo({
                   top: 0,
@@ -159,7 +159,7 @@ export default function Footer() {
             </NavLink>
                <NavLink
               to="/Faq"
-              className="text-amber-900 hover:text-[#7A4B12]"
+              className="text-amber-900 hover:text-amber-600"
               onClick={() =>
                 window.scrollTo({
                   top: 0,
