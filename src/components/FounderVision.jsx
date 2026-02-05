@@ -50,7 +50,7 @@ export default function FounderVision() {
             <img
               src={roppaImage}
               alt="Roopa, Co-Partner"
-              className="w-full h-full object-cover object-center"
+              className="w-full h-full object-cover scale-99 "
             />
           </div>
           <h2 className="text-2xl md:text-3xl text-amber-900 font-semibold tracking-wide">

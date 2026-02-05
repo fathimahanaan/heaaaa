@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <section
       className="w-full h-screen flex items-center justify-center text-center px-6 
-                 bg-center bg-no-repeat bg-cover md:bg-contain"
+                 bg-center bg-no-repeat bg-cover  sm:bg-white md:bg-contain"
       style={{ backgroundImage: "url('/kid.jpeg')" }}
     >
       <div className="max-w-xl bg-white/30 p-10">

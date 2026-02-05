@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Menu, X, Phone, Mail, Instagram } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 
 const navLinks = [
   { name: "Home", path: "/" },
@@ -13,7 +14,7 @@ const navLinks = [
 const contactLinks = [
   {
     href: "https://wa.me/917356524462?text=I%20would%20like%20to%20enquire",
-    icon: Phone,
+    icon:  FaWhatsapp ,
     label: "+91 73565 24462",
     ariaLabel: "Chat with Hea By Pink Bubbles on WhatsApp",
   },
@@ -62,7 +63,7 @@ export default function Navbar() {
 
         {/* Center - Logo */}
         <div className="flex items-center space-x-1">
-          <img src="/logo.png" alt="Logo" className="h-20 w-auto" />
+          <img src="/logo.png" alt="Logo" className="h-15 w-auto" />
           <p className="font-MeaCulpa-regular text-2xl text-amber-900">Hea By Pink Bubbles</p>
         </div>
 

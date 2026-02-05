@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Phone, Mail, Instagram, MapPin } from "lucide-react";
-
+import { FaWhatsapp } from "react-icons/fa";
+ 
 export default function VisitUsPage() {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
@@ -43,7 +44,7 @@ export default function VisitUsPage() {
             </div>
 
             <div className="flex items-center justify-center gap-2">
-              <Phone className="w-5 h-5" />
+              <FaWhatsapp className="w-5 h-5" />
               <a
                 href={`https://wa.me/${whatsappNumber}`}
                 target="_blank"
