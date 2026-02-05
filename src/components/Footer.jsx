@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { Instagram, Mail, MapPin,MessageCircle } from "lucide-react";
+import { Instagram, Mail, MapPin, MessageCircle } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 
 const navLinks = [
@@ -9,6 +9,7 @@ const navLinks = [
   { name: "Lookbook", path: "/lookbook" },
   { name: "Visit Us", path: "/visit" },
   { name: "Our Story", path: "/about" },
+  
 ];
 
 const contactLinks = [
@@ -23,7 +24,7 @@ const contactLinks = [
     ),
   },
   {
-    icon:FaWhatsapp,
+    icon: FaWhatsapp,
     text: "+91 73565 24462",
     href: "https://wa.me/917356524462?text=I%20would%20like%20to%20enquire",
   },
@@ -46,7 +47,6 @@ export default function Footer() {
   return (
     <footer className="bg-white border-t border-gray-200 text-[#2E3A16]">
       <div className="w-full flex flex-col md:flex-row items-center md:items-start justify-center md:justify-between px-4 md:px-[70px] py-12 text-sm font-body gap-12 md:gap-0 text-center md:text-left">
-
         {/* Contact Section */}
         <div className="flex flex-col items-center md:items-start gap-4">
           <h3 className="font-semibold tracking-wide">Contact</h3>
@@ -102,6 +102,18 @@ export default function Footer() {
                 {name}
               </NavLink>
             ))}
+            <NavLink
+              to="/privacy-policy"
+              className="text-amber-900 hover:text-[#7A4B12]"
+              onClick={() =>
+                window.scrollTo({
+                  top: 0,
+                  behavior: "smooth",
+                })
+              }
+            >
+              Privacy Policy
+            </NavLink>
           </div>
 
           <img src="/logo.png" alt="logo" className="h-35 w-auto mb-2" />

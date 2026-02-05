@@ -1,22 +1,22 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 
+import Layout from "./Layout";
+import WhatsApp from "./components/Whatsapp";
 import Home from "./components/home/Home";
+import FounderVision from "./components/FounderVision";
 import Collections from "./components/Collections";
 import Lookbook from "./components/Lookbook";
 import VisitUs from "./components/VisitUs";
-import FounderVision from "./components/FounderVision";
-import Layout from "./Layout";
-import WhatsApp from "./components/Whatsapp";
- 
- 
+import PrivacyPolicy from "./components/PrivacyPolicy";
 
+// Define all routes in an array
 const routes = [
   {
     path: "/",
     element: (
       <>
-    <WhatsApp/>
+        <WhatsApp />
         <Home />
         <FounderVision />
         <Collections />
@@ -24,24 +24,24 @@ const routes = [
         <VisitUs />
       </>
     ),
+    layout: true, // wrap with Layout
   },
-  { path: "/lookbook", element: <Lookbook /> },
-  { path: "/collections", element: (
-      <>
-        <Collections />
-       
-      </>
-    ),
-  },
-  { path: "/visit", element: <VisitUs /> },
-  { path: "/about", element: <FounderVision /> },
+  { path: "/lookbook", element: <Lookbook />, layout: true },
+  { path: "/collections", element: <Collections />, layout: true },
+  { path: "/visit", element: <VisitUs />, layout: true },
+  { path: "/about", element: <FounderVision />, layout: true },
+  { path: "/privacy-policy", element: <PrivacyPolicy />, layout: false }, // standalone
 ];
 
 export default function App() {
   return (
     <Routes>
-      {routes.map(({ path, element }) => (
-        <Route key={path} path={path} element={<Layout>{element}</Layout>} />
+      {routes.map(({ path, element, layout }) => (
+        <Route
+          key={path}
+          path={path}
+          element={layout ? <Layout>{element}</Layout> : element}
+        />
       ))}
     </Routes>
   );
