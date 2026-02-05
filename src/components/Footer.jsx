@@ -9,7 +9,6 @@ const navLinks = [
   { name: "Lookbook", path: "/lookbook" },
   { name: "Visit Us", path: "/visit" },
   { name: "Our Story", path: "/about" },
-  
 ];
 
 const contactLinks = [
@@ -113,6 +112,18 @@ export default function Footer() {
               }
             >
               Privacy Policy
+            </NavLink>
+            <NavLink
+              to="/Terms-and-conditions"
+              className="text-amber-900 hover:text-[#7A4B12]"
+              onClick={() =>
+                window.scrollTo({
+                  top: 0,
+                  behavior: "smooth",
+                })
+              }
+            >
+              Terms and Conditions
             </NavLink>
           </div>
 

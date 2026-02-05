@@ -9,6 +9,7 @@ import Collections from "./components/Collections";
 import Lookbook from "./components/Lookbook";
 import VisitUs from "./components/VisitUs";
 import PrivacyPolicy from "./components/PrivacyPolicy";
+import TermsAndConditions from "./components/navbar/TermsAndConditions";
 
 // Define all routes in an array
 const routes = [
@@ -30,7 +31,9 @@ const routes = [
   { path: "/collections", element: <Collections />, layout: true },
   { path: "/visit", element: <VisitUs />, layout: true },
   { path: "/about", element: <FounderVision />, layout: true },
-  { path: "/privacy-policy", element: <PrivacyPolicy />, layout: false }, // standalone
+  { path: "/privacy-policy", element: <PrivacyPolicy />, layout: false },  
+  { path: "/Terms-and-conditions" ,element: <TermsAndConditions/>, layout: false }, 
+   
 ];
 
 export default function App() {
