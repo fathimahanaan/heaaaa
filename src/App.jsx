@@ -10,6 +10,7 @@ import Lookbook from "./components/Lookbook";
 import VisitUs from "./components/VisitUs";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import TermsAndConditions from "./components/navbar/TermsAndConditions";
+import Faq from "./components/Faq";
 
 // Define all routes in an array
 const routes = [
@@ -33,6 +34,8 @@ const routes = [
   { path: "/about", element: <FounderVision />, layout: true },
   { path: "/privacy-policy", element: <PrivacyPolicy />, layout: false },  
   { path: "/Terms-and-conditions" ,element: <TermsAndConditions/>, layout: false }, 
+  {path:"/Faq",element: <Faq/>, layout: false }
+
    
 ];
 

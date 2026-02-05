@@ -69,7 +69,7 @@ export default function Footer() {
                 key={idx}
                 className="flex flex-col md:flex-row items-center md:items-start gap-2"
               >
-                <Icon className="w-4 h-4" />
+                <Icon className="w-4 h-4  " />
                 <span>{contact.text}</span>
               </div>
             );
@@ -101,30 +101,7 @@ export default function Footer() {
                 {name}
               </NavLink>
             ))}
-            <NavLink
-              to="/privacy-policy"
-              className="text-amber-900 hover:text-[#7A4B12]"
-              onClick={() =>
-                window.scrollTo({
-                  top: 0,
-                  behavior: "smooth",
-                })
-              }
-            >
-              Privacy Policy
-            </NavLink>
-            <NavLink
-              to="/Terms-and-conditions"
-              className="text-amber-900 hover:text-[#7A4B12]"
-              onClick={() =>
-                window.scrollTo({
-                  top: 0,
-                  behavior: "smooth",
-                })
-              }
-            >
-              Terms and Conditions
-            </NavLink>
+          
           </div>
 
           <img src="/logo.png" alt="logo" className="h-35 w-auto mb-2" />
@@ -153,7 +130,45 @@ export default function Footer() {
                 <span>{social.label}</span>
               </a>
             );
+
           })}
+          <p className="font-semibold font-4xl">Customer Service</p>
+             <NavLink
+              to="/privacy-policy"
+              className="text-amber-900 hover:text-[#7A4B12]"
+              onClick={() =>
+                window.scrollTo({
+                  top: 0,
+                  behavior: "smooth",
+                })
+              }
+            >
+              Privacy Policy
+            </NavLink>
+            <NavLink
+              to="/Terms-and-conditions"
+              className="text-amber-900 hover:text-[#7A4B12]"
+              onClick={() =>
+                window.scrollTo({
+                  top: 0,
+                  behavior: "smooth",
+                })
+              }
+            >
+              Terms and Conditions
+            </NavLink>
+               <NavLink
+              to="/Faq"
+              className="text-amber-900 hover:text-[#7A4B12]"
+              onClick={() =>
+                window.scrollTo({
+                  top: 0,
+                  behavior: "smooth",
+                })
+              }
+            >
+               Faq
+            </NavLink>
         </div>
       </div>
 
