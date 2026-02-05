@@ -102,8 +102,8 @@ export default function PrivacyPolicy() {
       <p className="mb-2 text-sm sm:text-base">
         To exercise these rights, contact us at:
       </p>
-      <ul className="list-disc list-inside mb-3 space-y-1 text-sm sm:text-base">
-        <li>
+      <ul className="list-disc  mb-4 pl-4 space-y-1 text-sm sm:text-base">
+        <li className="font-semibold">
           Email:{" "}
           <a
             href="mailto:heabypinkbubbles@gmail.com"
@@ -112,7 +112,7 @@ export default function PrivacyPolicy() {
             heabypinkbubbles@gmail.com
           </a>
         </li>
-        <li>
+        <li className="font-semibold">
           Phone/WhatsApp:{" "}
           <a
             href="https://wa.me/917356524462"
@@ -130,6 +130,35 @@ export default function PrivacyPolicy() {
         We may update this Privacy Policy from time to time. Any changes will be
         posted on this page with the updated effective date.
       </p>
+      <h2 className="text-lg sm:text-xl font-semibold mt-5 mb-1">
+        8. Contact Us
+      </h2>
+      <p>
+        If you have questions about this Privacy Policy or wish to make a
+        request regarding your personal data, you can contact us at:
+      </p>
+      <ul className="list-disc pl-4">
+        <li className="font-semibold">
+          Email:{" "}
+          <a
+            href="mailto:heabypinkbubbles@gmail.com"
+            className="text-amber-900 underline"
+          >
+            heabypinkbubbles@gmail.com
+          </a>
+        </li>
+        <li className="font-semibold">
+          Phone/WhatsApp:{" "}
+          <a
+            href="https://wa.me/917356524462"
+            className="text-amber-900 underline"
+          >
+            +91 73565 24462
+          </a>
+        </li>
+        <li className="font-semibold"> Sana Arcade, Chittilappally,PIN 680551, Thrissur</li>
+ 
+      </ul>
     </div>
   );
 }
