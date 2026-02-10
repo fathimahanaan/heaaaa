@@ -3,7 +3,7 @@ import React from "react";
 const lookbookItems = [
   {
     type: "image",
-    src: "/a.jpg",
+    src: "/aResize.jpg",
     title: "Soft Layers",
     description:
       "Soft layers and warm tones styled for an effortless seasonal look.",
