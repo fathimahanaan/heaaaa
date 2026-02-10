@@ -3,14 +3,14 @@ import React from "react";
 const lookbookItems = [
   {
     type: "image",
-    src: "/a.jpeg",
+    src: "/a.jpg",
     title: "Soft Layers",
     description:
       "Soft layers and warm tones styled for an effortless seasonal look.",
   },
   {
     type: "image",
-    src: "/s.jpeg",
+    src: "/sResize.jpg",
     title: "Relaxed Silhouette",
     description:
       "A relaxed silhouette highlighting comfort, texture, and everyday elegance.",
@@ -70,13 +70,13 @@ const lookbookItems = [
   },
   {
     type: "image",
-    src: "/ay.jpeg",
+    src: "/ayResize.jpg",
     title: "Everyday Edit",
     description: "Simple styling that highlights the beauty of everyday wear.",
   },
   {
-    type: "image",
-    src: "/adu.jpeg",
+    type: "video",
+    src: "/aduResize.mp4",
     title: "Everyday Edit",
     description: "Simple styling that highlights the beauty of everyday wear.",
   },

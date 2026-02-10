@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
  
 
-const images = ["/s.jpeg","black.jpeg", "/mohammed.jpeg",  "/neeenu.jpeg", "/aro.jpeg"];
+const images = ["/sResize.jpg","blackResize.jpg", "/mohammed.jpeg",  "/neeenuResize.jpg", "/aroResize.jpg"];
 
 export default function Collections() {
   const settings = {

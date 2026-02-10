@@ -54,7 +54,7 @@ export default function Footer() {
             const Icon = contact.icon;
 
             return contact.href ? (
-              <a
+              <a 
                 key={idx}
                 href={contact.href}
                 target="_blank"

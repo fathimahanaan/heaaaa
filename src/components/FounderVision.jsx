@@ -1,7 +1,7 @@
 import React from "react";
 
-const shefijaImage = "/whaa.jpeg"; // Shefija's photo
-const roppaImage = "/roopa.jpeg"; // Roopa's photo
+const shefijaImage = "/whaaResize.jpg"; // Shefija's photo
+const roppaImage = "/roopaResize.jpg"; // Roopa's photo
 
 export default function FounderVision() {
   return (
