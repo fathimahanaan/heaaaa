@@ -7,36 +7,7 @@ const products = [
     price: "$1,200",
     image: "/sResize.jpg",
   },
-  {
-    id: 2,
-    name: "Party Gown",
-    price: "$420",
-    image: "/blackResize.jpg",
-  },
-  {
-    id: 3,
-    name: "Statement Jewelry",
-    price: "$180",
-    image: "/mohammed.jpeg",
-  },
-  {
-    id: 4,
-    name: "Kids Festive Wear",
-    price: "$95",
-    image: "/neeenuResize.jpg",
-  },
-  {
-    id: 5,
-    name: "Leisure Suit",
-    price: "$210",
-    image: "/aroResize.jpg",
-  },
-  {
-    id: 6,
-    name: "Loungewear Set",
-    price: "$130",
-    image: "/sResize.jpg",
-  },
+ 
 ];
 
 export default function CollectionGridPage() {
