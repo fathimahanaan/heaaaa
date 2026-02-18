@@ -73,12 +73,7 @@ const lookbookItems = [
     title: "Fluid Expression",
     description: "Dynamic motion captures the spirit of ease and freedom.",
   },
-  {
-    type: "image",
-    src: "/mmResize.jpeg",
-    title: "Timeless Form",
-    description: "Classic structure meets contemporary softness.",
-  },
+ 
   {
     type: "image",
     src: "/miResize.jpeg",
