@@ -2,11 +2,12 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import CollectionGridPage from "./CollectionGridPage";
  
 
 const images = ["/sResize.jpg","blackResize.jpg", "/mohammed.jpeg",  "/neeenuResize.jpg", "/aroResize.jpg"];
 
-export default function Collections() {
+export default function Collections({ showGrid = false }) {
   const settings = {
     dots: true,
     infinite: true,
@@ -20,19 +21,16 @@ export default function Collections() {
 
   return (
     <section className="bg-[#D8E2C4] py-20 px-4 sm:px-6 md:px-12">
-      {/* Header */}
       <div className="max-w-3xl mx-auto text-center mb-12">
-        <h1 className="text-4xl md:text-5xl font-MeaCulpa-regular   text-amber-900 mb-4">
+        <h1 className="text-4xl md:text-5xl font-MeaCulpa-regular text-amber-900 mb-4">
           The Collections
         </h1>
-       
-        <p className="text-[#556B2F] md:text-lg leading-relaxed tracking-wide  text-opacity-90 max-w-3xl mx-auto text-center">
-          Bridal and Casual Couture, Party wears and gowns, Statement and Rental
-          jewelleries, Kids festive attires, Loungewear, Leisure suits —
-          handpicked and custom made for your special moments.
+
+        <p className="text-[#556B2F] md:text-lg leading-relaxed tracking-wide text-opacity-90 max-w-3xl mx-auto">
+          Bridal and Casual Couture...
         </p>
       </div>
-      {/* Image Carousel */}
+
       <div className="max-w-4xl mx-auto">
         <Slider {...settings}>
           {images.map((src, index) => (
@@ -45,6 +43,8 @@ export default function Collections() {
             </div>
           ))}
         </Slider>
+
+        {showGrid && <CollectionGridPage />}
       </div>
     </section>
   );

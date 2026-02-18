@@ -29,7 +29,11 @@ const routes = [
     layout: true, // wrap with Layout
   },
   { path: "/lookbook", element: <Lookbook />, layout: true },
-  { path: "/collections", element: <Collections />, layout: true },
+ { 
+  path: "/collections", 
+  element: <Collections showGrid />, 
+  layout: true 
+},
   { path: "/visit", element: <VisitUs />, layout: true },
   { path: "/about", element: <FounderVision />, layout: true },
   { path: "/privacy-policy", element: <PrivacyPolicy />, layout: false },  
