@@ -5,7 +5,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 const navLinks = [
   { name: "Home", path: "/" },
-  { name: "Collections", path: "/collections" },
+  { name: "In Store", path: "/collections" },
   { name: "Lookbook", path: "/lookbook" },
   { name: "Visit Us", path: "/visit" },
   { name: "Our Story", path: "/about" },

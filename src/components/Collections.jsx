@@ -7,7 +7,7 @@ import CollectionGridPage from "./CollectionGridPage";
 
 const images = ["/sResize.jpg","blackResize.jpg", "/mohammed.jpeg",  "/neeenuResize.jpg", "/aroResize.jpg"];
 
-export default function Collections({ showGrid = false }) {
+export default function Collections() {
   const settings = {
     dots: true,
     infinite: true,
@@ -40,11 +40,12 @@ export default function Collections({ showGrid = false }) {
                 alt={`collection-${index}`}
                 className="mx-auto rounded-lg max-h-96 w-auto max-w-full object-cover"
               />
+             s
             </div>
           ))}
         </Slider>
 
-        {showGrid && <CollectionGridPage />}
+        <CollectionGridPage />
       </div>
     </section>
   );
