@@ -27,7 +27,7 @@ const lookbookItems = [
   },
   {
     type: "video",
-    src: "/video.mp4",
+    src: "/manna.mp4",
     title: "Flow State",
     description: "A gentle rhythm that highlights softness and natural movement.",
   },
@@ -69,11 +69,16 @@ const lookbookItems = [
   },
   {
     type: "video",
-    src: "/aduResize.mp4",
+    src: "/adu.mp4",
     title: "Fluid Expression",
     description: "Dynamic motion captures the spirit of ease and freedom.",
   },
- 
+  {
+    type: "image",
+    src: "/mmResize.jpeg",
+    title: "Timeless Form",
+    description: "Classic structure meets contemporary softness.",
+  },
   {
     type: "image",
     src: "/miResize.jpeg",

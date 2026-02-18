@@ -12,7 +12,7 @@ export default function Home() {
     <section
       className="w-full h-screen flex items-center justify-center text-center px-6 
                  bg-center bg-no-repeat bg-cover  sm:bg-white md:bg-contain"
-      style={{ backgroundImage: "url('/kidResize.jpeg')" }}
+      style={{ backgroundImage: "url('kidResize.jpeg')" }}
     >
       <div className="max-w-xl bg-white/30 p-10">
         <h1 className="font-Lato text-[#3A3F1F] text-3xl md:text-6xl tracking-wide mb-6">
