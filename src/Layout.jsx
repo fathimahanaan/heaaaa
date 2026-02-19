@@ -8,8 +8,8 @@ export default function Layout({ children }) {
       {/* Fixed Navbar */}
       <Navbar />
 
-      {/* Page content */}
-      <main className="pt-[180px]">{children}</main>
+      {/* Main content scrolls naturally */}
+      <main className="pt-[120px] sm:pt-[180px] w-full"> {children}</main>
 
       {/* Footer */}
       <Footer />

@@ -91,12 +91,7 @@ export default function Footer() {
                     ? "text-[#8B9B68]"
                     : "text-amber-900 hover:text-[#7A4B12]"
                 }
-                onClick={() =>
-                  window.scrollTo({
-                    top: 0,
-                    behavior: "smooth",
-                  })
-                }
+              
               >
                 {name}
               </NavLink>

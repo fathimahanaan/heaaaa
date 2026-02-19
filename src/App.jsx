@@ -12,6 +12,7 @@ import PrivacyPolicy from "./components/PrivacyPolicy";
 import TermsAndConditions from "./components/navbar/TermsAndConditions";
 import Faq from "./components/Faq";
 import CollectionGridPage from "./components/CollectionGridPage";
+import ScrollToTop from "./components/ScrollToTop";
 
 // Define all routes in an array
 const routes = [
@@ -47,7 +48,9 @@ const routes = [
 
 export default function App() {
   return (
-    <Routes>
+    <>
+     <ScrollToTop /> 
+      <Routes>
       {routes.map(({ path, element, layout }) => (
         <Route
           key={path}
@@ -56,5 +59,7 @@ export default function App() {
         />
       ))}
     </Routes>
+    </>
+   
   );
 }
