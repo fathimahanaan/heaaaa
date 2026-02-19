@@ -44,7 +44,7 @@ export default function Collections() {
             </div>
           ))}
         </Slider>
- <CollectionGridPage />
+ 
         
       </div>
     </section>

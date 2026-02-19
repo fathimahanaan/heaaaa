@@ -11,6 +11,7 @@ import VisitUs from "./components/VisitUs";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import TermsAndConditions from "./components/navbar/TermsAndConditions";
 import Faq from "./components/Faq";
+import CollectionGridPage from "./components/CollectionGridPage";
 
 // Define all routes in an array
 const routes = [
@@ -31,9 +32,10 @@ const routes = [
   { path: "/lookbook", element: <Lookbook />, layout: true },
  { 
   path: "/collections", 
-  element: <Collections showGrid />, 
+  element: <Collections  />, 
   layout: true 
 },
+  { path: "/instore", element: <CollectionGridPage/>, layout: true },
   { path: "/visit", element: <VisitUs />, layout: true },
   { path: "/about", element: <FounderVision />, layout: true },
   { path: "/privacy-policy", element: <PrivacyPolicy />, layout: false },  
