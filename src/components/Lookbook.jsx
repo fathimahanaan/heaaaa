@@ -158,7 +158,7 @@ export default function ElegantLookbook() {
           </div>
         ))}
       </div>
-       <CollectionGridPage />
+       
     </section>
   );
 }
