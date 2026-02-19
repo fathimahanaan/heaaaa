@@ -24,7 +24,7 @@ export default function VisitUsPage() {
       <section className="px-4 sm:px-6 md:px-12 py-32">
         {/* Header */}
         <div className="max-w-3xl mx-auto text-center mb-12">
-          <h1 className="text-6xl font-MeaCulpa-regular text-amber-900 mb-6 tracking-wide">
+          <h1 className="text-4xl font-MeaCulpa-regular text-amber-900 mb-6 tracking-wide">
             Visit Us
           </h1>
           <p className="text-[#3A3F1F]/80 md:text-lg leading-relaxed tracking-wide mt-4">

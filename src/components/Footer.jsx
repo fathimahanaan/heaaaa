@@ -5,7 +5,8 @@ import { FaWhatsapp } from "react-icons/fa";
 
 const navLinks = [
   { name: "Home", path: "/" },
-  { name: "In store", path: "/collections" },
+  { name: "collection", path: "/collections" },
+    { name: "in store", path: "/instore" },
   { name: "Lookbook", path: "/lookbook" },
   { name: "Visit Us", path: "/visit" },
   { name: "Our Story", path: "/about" },
@@ -54,7 +55,7 @@ export default function Footer() {
             const Icon = contact.icon;
 
             return contact.href ? (
-              <a 
+              <a
                 key={idx}
                 href={contact.href}
                 target="_blank"
@@ -91,12 +92,10 @@ export default function Footer() {
                     ? "text-[#8B9B68]"
                     : "text-amber-900 hover:text-[#7A4B12]"
                 }
-              
               >
                 {name}
               </NavLink>
             ))}
-          
           </div>
 
           <img src="/logo.png" alt="logo" className="h-35 w-auto mb-2" />
@@ -125,45 +124,44 @@ export default function Footer() {
                 <span>{social.label}</span>
               </a>
             );
-
           })}
           <p className="font-semibold font-4xl">Customer Service</p>
-             <NavLink
-              to="/privacy-policy"
-              className="text-amber-900 hover:text-amber-600"
-              onClick={() =>
-                window.scrollTo({
-                  top: 0,
-                  behavior: "smooth",
-                })
-              }
-            >
-              Privacy Policy
-            </NavLink>
-            <NavLink
-              to="/Terms-and-conditions"
-              className="text-amber-900  hover:text-amber-600"
-              onClick={() =>
-                window.scrollTo({
-                  top: 0,
-                  behavior: "smooth",
-                })
-              }
-            >
-              Terms and Conditions
-            </NavLink>
-               <NavLink
-              to="/Faq"
-              className="text-amber-900 hover:text-amber-600"
-              onClick={() =>
-                window.scrollTo({
-                  top: 0,
-                  behavior: "smooth",
-                })
-              }
-            >
-               Faq
-            </NavLink>
+          <NavLink
+            to="/privacy-policy"
+            className="text-amber-900 hover:text-amber-600"
+            onClick={() =>
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+              })
+            }
+          >
+            Privacy Policy
+          </NavLink>
+          <NavLink
+            to="/Terms-and-conditions"
+            className="text-amber-900  hover:text-amber-600"
+            onClick={() =>
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+              })
+            }
+          >
+            Terms and Conditions
+          </NavLink>
+          <NavLink
+            to="/Faq"
+            className="text-amber-900 hover:text-amber-600"
+            onClick={() =>
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+              })
+            }
+          >
+            Faq
+          </NavLink>
         </div>
       </div>
 

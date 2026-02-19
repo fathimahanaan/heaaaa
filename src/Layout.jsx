@@ -9,7 +9,7 @@ export default function Layout({ children }) {
       <Navbar />
 
       {/* Main content scrolls naturally */}
-      <main className="pt-[120px] sm:pt-[180px] w-full"> {children}</main>
+      <main className="pt-[120px] sm:pt-[120px] md:pt-[180px] w-full"> {children}</main>
 
       {/* Footer */}
       <Footer />

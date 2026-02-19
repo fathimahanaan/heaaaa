@@ -58,7 +58,7 @@ export default function CollectionGridPage() {
   };
 
   return (
-    <section className=" sm:mt-20 bg-amber-900/10 p-8 rounded-xl shadow-lg max-w-4xl mx-auto flex flex-col items-center">
+    <section className=" sm:mt-1 md:mt-20 bg-amber-900/10 p-8 rounded-xl shadow-lg max-w-4xl mx-auto flex flex-col items-center">
       {/* Header */}
       <div className="max-w-3xl  mx-auto text-center mb-14">
         <h1 className="text-3xl md:text-4xl font-MeaCulpa-regular text-amber-900 mb-4">
