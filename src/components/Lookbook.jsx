@@ -46,7 +46,7 @@ const lookbookItems = [
   },
   {
     type: "image",
-    src: "/nhResize.jpeg",
+    src: "/naahri.jpeg",
     title: "Understated Charm",
     description: "Soft styling that feels calm, wearable, and refined.",
   },
