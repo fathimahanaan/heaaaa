@@ -58,9 +58,10 @@ export default function CollectionGridPage() {
   };
 
   return (
-    <section className="mt-20 bg-gradient-to-r from-white via-white to-white p-8 rounded-xl shadow-lg">
+    <section className="mt-20 bg-amber-900/10 p-8 rounded-xl shadow-lg max-w-4xl mx-auto flex flex-col items-center">
+
       {/* Header */}
-      <div className="max-w-5xl mx-auto text-center mb-14">
+      <div className="max-w-3xl  mx-auto text-center mb-14">
         <h1 className="text-3xl md:text-4xl font-MeaCulpa-regular text-amber-900 mb-4">
           In Store
         </h1>
@@ -71,7 +72,7 @@ export default function CollectionGridPage() {
       </div>
 
       {/* Grid */}
-<div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 max-w-6xl mx-auto">
+<div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
   {products.map((item) => (
     <div
       key={item.id}
