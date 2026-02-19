@@ -27,7 +27,7 @@ export default function Collections() {
         </h1>
 
         <p className="text-[#556B2F] md:text-lg leading-relaxed tracking-wide text-opacity-90 max-w-3xl mx-auto">
-          Bridal and Casual Couture...
+          
         </p>
       </div>
 
@@ -40,12 +40,12 @@ export default function Collections() {
                 alt={`collection-${index}`}
                 className="mx-auto rounded-lg max-h-96 w-auto max-w-full object-cover"
               />
-             s
+             
             </div>
           ))}
         </Slider>
-
-        <CollectionGridPage />
+ <CollectionGridPage />
+        
       </div>
     </section>
   );

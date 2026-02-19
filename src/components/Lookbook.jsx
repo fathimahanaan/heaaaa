@@ -1,4 +1,5 @@
 import React from "react";
+import CollectionGridPage from "./CollectionGridPage";
 
 const lookbookItems = [
   {
@@ -157,6 +158,7 @@ export default function ElegantLookbook() {
           </div>
         ))}
       </div>
+       <CollectionGridPage />
     </section>
   );
 }
