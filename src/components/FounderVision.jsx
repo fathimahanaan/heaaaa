@@ -45,22 +45,8 @@ export default function FounderVision() {
         </div>
 
         {/* Roopa (Secondary / Co-Partner) */}
-        <div className="flex flex-col items-center text-center space-y-4">
-          <div className="w-44 h-44 md:w-44 md:h-44 rounded-full overflow-hidden shadow-lg border-2 border-[#D8E2C4] flex items-center justify-center mb-2">
-            <img
-              src={roppaImage}
-              alt="Roopa, Co-Partner"
-              className="w-full h-full object-cover scale-99 "
-            />
-          </div>
-          <h2 className="text-2xl md:text-3xl text-amber-900 font-semibold tracking-wide">
-            ROOPA
-          </h2>
-          <p className="text-amber-900 font-medium text-sm md:text-lg">
-            Co-Partner
-          </p>
-          <p className="text-[#3A3F1F]/80 leading-relaxed tracking-wide max-w-xl"></p>
-        </div>
+        
+        
       </div>
 
       {/* Vision Section */}
