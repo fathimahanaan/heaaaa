@@ -12,7 +12,7 @@ export default function FounderVision() {
           About Our Boutique
         </h1>
        <p className="text-[#3A3F1F]/80 md:text-lg leading-relaxed tracking-wide">
-  Discover the story behind <strong>Hea By Pink Bubbles</strong>. Shefija, the creator of <strong>Pink Bubbles</strong>, has a vision to craft <strong>Hea By Pink Bubbles</strong> handpicked, elegant collections for every special moment.
+  Discover the story behind <strong>Hea By Pink Bubbles</strong>. Shefija, the creator of <strong>Pink Bubbles</strong>
 </p>
       </div>
 
