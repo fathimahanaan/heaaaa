@@ -11,12 +11,9 @@ export default function FounderVision() {
         <h1 className="text-4xl md:text-6xl font-MeaCulpa-regular text-amber-900 mb-6 tracking-wide">
           About Our Boutique
         </h1>
-        <p className="text-[#3A3F1F]/80 md:text-lg leading-relaxed tracking-wide">
-          Discover the story behind <strong>Hea By Pink Bubbles</strong>.
-          Shefija, the inventor of <strong>Pink Bubbles</strong>, expanded her
-          vision with Roopa to create Hea By Pink Bubbles, crafting handpicked,
-          elegant collections for every special moment.
-        </p>
+       <p className="text-[#3A3F1F]/80 md:text-lg leading-relaxed tracking-wide">
+  Discover the story behind <strong>Hea By Pink Bubbles</strong>. Shefija, the creator of <strong>Pink Bubbles</strong>, has a vision to craft <strong>Hea By Pink Bubbles</strong> handpicked, elegant collections for every special moment.
+</p>
       </div>
 
       {/* Founders Section */}
@@ -44,7 +41,7 @@ export default function FounderVision() {
           </p>
         </div>
 
-        {/* Roopa (Secondary / Co-Partner) */}
+        
         
         
       </div>
